@@ -1,6 +1,7 @@
 import 'dart:html';
 import 'package:polymer/polymer.dart';
-import 'package:fancy_syntax/syntax.dart';
+import 'package:fancy_syntax/syntax.dart'; // renamed to polymer_expressions
+//import 'package:polymer_expressions/polymer_expressions.dart';
 
 class App extends Object with ObservableMixin {
   // No need to mark this as @observable, because the variable itself
@@ -27,6 +28,7 @@ class App extends Object with ObservableMixin {
 
 main() {
   TemplateElement template = query('#tmpl');
-  template.bindingDelegate = new FancySyntax();
+  template.bindingDelegate = new FancySyntax(); // renamed to polymer_expressions
+//  template.bindingDelegate = new PolymerExpressions();
   template.model = new App();
 }
