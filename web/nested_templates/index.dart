@@ -21,7 +21,7 @@ main() {
           ..zip = '99999');
   
   TemplateElement tmpl = query('#tmpl') as TemplateElement;
-  TemplateElement tmpl2 = query('#tmpl') as TemplateElement;
+  TemplateElement tmpl2 = query('#tmpl2') as TemplateElement;
   
   tmpl.bindingDelegate = new PolymerExpressions();
   tmpl2.bindingDelegate = new PolymerExpressions();
