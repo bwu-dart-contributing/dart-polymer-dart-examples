@@ -67,7 +67,11 @@ Binding, conditionals:
        bool get applyAuthorStyles => true;
        // ...
     }
-  
+
+* To create an app that works when compiled to JavaScript, you need to
+  build it. See deploy_to_javascript and its `build.dart` file. Notice the
+  `--deploy` argument.
+
 ## Known issues:
 
 (This is not a complete list of bugs with polymer.dart. Just the bugs that
@@ -115,6 +119,17 @@ https://code.google.com/p/dart/issues/detail?id=12719
 
 on-change stops firing if the input field has a bound value:
 https://code.google.com/p/dart/issues/detail?id=12722
+
+polymer.dart compiles to very large JavaScript files:
+https://code.google.com/p/dart/issues/detail?id=12730
+
+Names in nested templates aren't working:
+nested_templates
+https://code.google.com/p/dart/issues/detail?id=12742
+
+Binding to a select value doesn't work (but binding to selectedIndex works)
+bind_to_select_field
+https://code.google.com/p/dart/issues/detail?id=12779
 
 ## TODO
 

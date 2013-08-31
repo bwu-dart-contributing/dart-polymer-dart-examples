@@ -3,19 +3,15 @@
 <html>
   <head>
     <title>index</title>
-    <!-- you have to import the HTML file that contains the custom element -->
     <link rel="import" href="my_element.html">
-    
-    <!-- This is the bootstrap script for polymer. Use this INSTEAD of
-         dart.js -->
     <script src="packages/polymer/boot.js"></script>
   </head>
  
-  <body>
-    
-    <!-- you must close custom elements -->
+  <body>   
     <my-element></my-element>
     
     <script type="application/dart">main() {}</script>
+    <script src="hugs.js"></script>
+    <script src="packages/browser/interop.js"></script>
   </body>
 </html>

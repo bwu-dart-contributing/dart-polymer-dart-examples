@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+<polymer-element name="my-element" extends="div">
+=======
 <polymer-element name="my-element">
+>>>>>>> 3a9f279ceafb3b359fdae8e569ee8f0d2d622132
     <template>
         <h1>Hello from inside the custom element!</h1>
     </template>

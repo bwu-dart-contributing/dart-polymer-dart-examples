@@ -1,3 +1,5 @@
+library my_element;
+
 import 'package:polymer/polymer.dart';
 
 // Custom elements extend PolymerElement.
@@ -6,4 +8,10 @@ import 'package:polymer/polymer.dart';
 @CustomTag("my-element")
 class MyElement extends PolymerElement {
   // custom functionality goes here
+  
+  created() {
+    super.created();
+    
+    print('my-element created');
+  }
 }
